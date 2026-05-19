@@ -1,0 +1,153 @@
+export type Product = {
+  id: number;
+  name: string;
+  price: number;
+  originalPrice?: number;
+  rating: number;
+  reviewCount: number;
+  image: string;
+  category: string;
+  badge?: "sale" | "featured" | "new";
+  description: string;
+};
+
+export const categories = ["All", "Electronics", "Clothing", "Home", "Sports", "Beauty"];
+
+export const products: Product[] = [
+  {
+    id: 1,
+    name: "Wireless Noise-Cancelling Headphones",
+    price: 79.99,
+    originalPrice: 129.99,
+    rating: 4.8,
+    reviewCount: 2341,
+    image: "https://m.media-amazon.com/images/I/71YM2N5whtL.jpg",
+    category: "Electronics",
+    badge: "sale",
+    description: "Premium sound quality with 30-hour battery life and active noise cancellation.",
+  },
+  {
+    id: 2,
+    name: "Minimalist Leather Watch",
+    price: 149.99,
+    rating: 4.7,
+    reviewCount: 876,
+    image: "https://www.peugeotwatches.com/cdn/shop/products/2059G-FV.jpg?v=1633106380&width=1500",
+    category: "Clothing",
+    badge: "featured",
+    description: "Elegant timepiece with genuine leather strap and sapphire crystal glass.",
+  },
+  {
+    id: 3,
+    name: "Smart Home Speaker",
+    price: 59.99,
+    originalPrice: 89.99,
+    rating: 4.5,
+    reviewCount: 1203,
+    image: "https://i.ebayimg.com/images/g/GH8AAOSwvYdixAYk/s-l1200.png",
+    category: "Electronics",
+    badge: "sale",
+    description: "Voice-controlled speaker with 360° sound and smart home integration.",
+  },
+  {
+    id: 4,
+    name: "Organic Cotton Hoodie",
+    price: 64.99,
+    rating: 4.6,
+    reviewCount: 543,
+    image: "https://live.royalapparel.net/prodimg/hires/21052ORGEVG_081423145018.png",
+    category: "Clothing",
+    badge: "new",
+    description: "Sustainably sourced organic cotton hoodie, ultra-soft and ethically made.",
+  },
+  {
+    id: 5,
+    name: "Ceramic Pour-Over Coffee Set",
+    price: 44.99,
+    rating: 4.9,
+    reviewCount: 389,
+    image: "https://m.media-amazon.com/images/I/7159+ELcEOL._AC_UF894,1000_QL80_.jpg",
+    category: "Home",
+    badge: "featured",
+    description: "Handcrafted ceramic dripper and carafe for the perfect morning brew.",
+  },
+  {
+    id: 6,
+    name: "Yoga Mat Pro",
+    price: 39.99,
+    originalPrice: 59.99,
+    rating: 4.7,
+    reviewCount: 1102,
+    image: "https://www.manduka.com/cdn/shop/files/111011050-Mats-PRO71-BLACK-SAGE-01.jpg?v=1768944270&width=871",
+    category: "Sports",
+    badge: "sale",
+    description: "Non-slip, eco-friendly TPE yoga mat with alignment lines and carry strap.",
+  },
+  {
+    id: 7,
+    name: "Vitamin C Glow Serum",
+    price: 34.99,
+    rating: 4.8,
+    reviewCount: 2108,
+    image: "https://m.media-amazon.com/images/I/51WIfa6crgL.jpg",
+    category: "Beauty",
+    badge: "featured",
+    description: "Brightening serum with 20% Vitamin C, hyaluronic acid, and niacinamide.",
+  },
+  {
+    id: 8,
+    name: "Mechanical Keyboard TKL",
+    price: 119.99,
+    rating: 4.6,
+    reviewCount: 654,
+    image: "https://media.gamestop.com/i/gamestop/20006080_Black_ALT02?$pdp$?w=1256&h=664&fmt=auto",
+    category: "Electronics",
+    badge: "new",
+    description: "Tenkeyless mechanical keyboard with RGB backlight and tactile switches.",
+  },
+  {
+    id: 9,
+    name: "Linen Throw Blanket",
+    price: 49.99,
+    rating: 4.5,
+    reviewCount: 298,
+    image: "https://m.media-amazon.com/images/I/71EUmwZhM6L.jpg",
+    category: "Home",
+    description: "Lightweight stonewashed linen throw, perfect for cozy evenings at home.",
+  },
+  {
+    id: 10,
+    name: "Running Shoes Ultra",
+    price: 89.99,
+    originalPrice: 119.99,
+    rating: 4.7,
+    reviewCount: 1876,
+    image: "https://cdn.runrepeat.com/storage/gallery/buying_guide_primary/267/267-best-ultra-running-shoes-15820184-main.jpg",
+    category: "Sports",
+    badge: "sale",
+    description: "Responsive foam cushioning and breathable mesh upper for peak performance.",
+  },
+  {
+    id: 11,
+    name: "Retinol Night Cream",
+    price: 29.99,
+    rating: 4.6,
+    reviewCount: 934,
+    image: "https://m.media-amazon.com/images/I/51z+zE2nFyL.jpg",
+    category: "Beauty",
+    badge: "new",
+    description: "Advanced retinol formula that visibly reduces fine lines while you sleep.",
+  },
+  {
+    id: 12,
+    name: "Portable Bluetooth Speaker",
+    price: 49.99,
+    originalPrice: 69.99,
+    rating: 4.4,
+    reviewCount: 712,
+    image: "https://cdn.thewirecutter.com/wp-content/media/2024/11/portablebluetoothspeakers-2048px-9130.jpg?width=2048&quality=60&crop=2048:1365&auto=webp",
+    category: "Electronics",
+    badge: "sale",
+    description: "Waterproof IPX7 speaker with 24-hour playtime and deep bass sound.",
+  },
+];
