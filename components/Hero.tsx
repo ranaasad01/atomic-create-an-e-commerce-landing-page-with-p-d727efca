@@ -79,7 +79,7 @@ export default function Hero() {
           <div className="relative w-full aspect-square max-w-lg mx-auto">
             <div className="absolute inset-0 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
               <img
-                src="https://cdn.prod.website-files.com/659415b46df8ea43c3877776/67d49f3d8922c5f1f1c33801_featured-products-blog-post-cover-image.jpg"
+                src="/images/modern-ecommerce-lifestyle-products.jpg"
                 alt="Featured products"
                 className="w-full h-full object-cover"
               />
