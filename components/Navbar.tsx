@@ -6,14 +6,10 @@ import { useCartStore } from "@/lib/store";
 import { useState, useEffect } from "react";
 
 export default function Navbar() {
-  const totalItems = useCartStore((s) => s.totalItems);
-  const [count, setCount] = useState(0);
+  const items = useCartStore((s) => s.items);
+  const count = items.reduce((sum, i) => sum + i.quantity, 0);
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    setCount(totalItems());
-  }, [totalItems]);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 10);

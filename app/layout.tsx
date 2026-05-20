@@ -1,27 +1,29 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "LuminaShop — Premium Products at Unbeatable Prices",
-  description:
-    "Discover curated electronics, fashion, home goods, and more. Free shipping on orders over $75.",
+  title: {
+    default: "Lumina",
+    template: "%s | Lumina",
+  },
+  description: "Lumina — illuminate your world with clarity and purpose.",
+  openGraph: {
+    title: "Lumina",
+    description: "Lumina — illuminate your world with clarity and purpose.",
+    siteName: "Lumina",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lumina",
+    description: "Lumina — illuminate your world with clarity and purpose.",
+  },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className + " antialiased"}>
-        <Navbar />
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
